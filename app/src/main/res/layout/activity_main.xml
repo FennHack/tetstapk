@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#51C8EC">
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ProgressBar
+        android:id="@+id/progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_gravity="top"
+        android:max="100"
+        android:visibility="gone" />
+
+    <!-- Pojok kiri atas: refresh -->
+    <ImageButton
+        android:id="@+id/btnRefresh"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_gravity="top|start"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="8dp"
+        android:alpha="0.45"
+        android:background="@drawable/bg_round_button"
+        android:contentDescription="Refresh"
+        android:padding="5dp"
+        android:src="@drawable/ic_refresh"
+        app:tint="#FFFFFF"
+        xmlns:app="http://schemas.android.com/apk/res-auto" />
+
+    <!-- Pojok kanan atas: mode desktop -->
+    <ImageButton
+        android:id="@+id/btnDesktop"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_gravity="top|end"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="6dp"
+        android:alpha="0.45"
+        android:background="@drawable/bg_round_button"
+        android:contentDescription="Mode desktop"
+        android:padding="5dp"
+        android:src="@drawable/ic_desktop"
+        app:tint="#FFFFFF"
+        xmlns:app="http://schemas.android.com/apk/res-auto" />
+</FrameLayout>
